@@ -3,16 +3,144 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bistrot Caffè Vintage — Milano</title>
-<meta name="description" content="Bistrot Caffè Vintage in Via delle Ande 5, Milano. Caffetteria, pasticceria, bistrot e cocktail bar. Atmosfera nostalgica italiana, dehor pet-friendly.">
+<title>Bistrot Caffè Vintage · Caffetteria e Cocktail Bar a Milano</title>
+<meta name="description" content="Bistrot Caffè Vintage in Via delle Ande 5, quartiere Gallaratese (Milano). Caffetteria, pasticceria e cocktail bar a due passi dalla metro M1 Bonola. Aperti tutti i giorni dalle 7.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,700&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 
+<!-- Favicon -->
+<link rel="icon" href="favicon/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon/icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="favicon/icon-512.png">
+<meta name="theme-color" content="#efe6d1">
+
+<!-- Canonical & Robots -->
+<link rel="canonical" href="https://bistrot-caffe-vintage.vercel.app/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Bistrot Caffè Vintage">
+<meta name="geo.region" content="IT-25">
+<meta name="geo.placename" content="Milano">
+<meta name="geo.position" content="45.5011;9.1234">
+<meta name="ICBM" content="45.5011, 9.1234">
+
+<!-- Open Graph (Facebook, WhatsApp, iMessage, LinkedIn) -->
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:site_name" content="Bistrot Caffè Vintage">
+<meta property="og:locale" content="it_IT">
+<meta property="og:title" content="Bistrot Caffè Vintage — un salotto d'altri tempi a Milano">
+<meta property="og:description" content="Caffetteria, pasticceria, bistrot e cocktail bar in Via delle Ande 5, quartiere Gallaratese. Atmosfera vintage, dehor pet-friendly, a due passi dalla metro M1 Bonola.">
+<meta property="og:url" content="https://bistrot-caffe-vintage.vercel.app/">
+<meta property="og:image" content="https://bistrot-caffe-vintage.vercel.app/images/vetrina-insegna.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="La facciata del Bistrot Caffè Vintage con l'insegna dorata">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bistrot Caffè Vintage — Milano">
+<meta name="twitter:description" content="Un salotto d'altri tempi nel quartiere Gallaratese. Caffetteria, pasticceria, cocktail bar.">
+<meta name="twitter:image" content="https://bistrot-caffe-vintage.vercel.app/images/vetrina-insegna.webp">
+
+<!-- Schema.org Structured Data - CafeOrCoffeeShop / Restaurant -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["CafeOrCoffeeShop", "Restaurant", "BarOrPub"],
+  "name": "Bistrot Caffè Vintage",
+  "description": "Caffetteria, pasticceria, bistrot e cocktail bar con atmosfera vintage nel quartiere Gallaratese di Milano, a due passi dalla metro M1 Bonola.",
+  "image": [
+    "https://bistrot-caffe-vintage.vercel.app/images/vetrina-insegna.webp",
+    "https://bistrot-caffe-vintage.vercel.app/images/sala-ampia.webp",
+    "https://bistrot-caffe-vintage.vercel.app/images/pasticceria-bancone.webp"
+  ],
+  "url": "https://bistrot-caffe-vintage.vercel.app/",
+  "telephone": "+39 342 906 2935",
+  "priceRange": "€€",
+  "servesCuisine": ["Italian", "Coffee", "Pastry", "Cocktails"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via delle Ande, 5",
+    "addressLocality": "Milano",
+    "addressRegion": "MI",
+    "postalCode": "20151",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.5011,
+    "longitude": 9.1234
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Quartiere Gallaratese, Milano"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Sunday"],
+      "opens": "07:00",
+      "closes": "21:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Friday", "Saturday"],
+      "opens": "07:00",
+      "closes": "22:00"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.5",
+    "reviewCount": "51",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "hasMenu": {
+    "@type": "Menu",
+    "name": "Caffetteria, pasticceria e cocktail",
+    "hasMenuSection": [
+      {"@type": "MenuSection", "name": "Caffetteria"},
+      {"@type": "MenuSection", "name": "Pasticceria"},
+      {"@type": "MenuSection", "name": "Bistrot"},
+      {"@type": "MenuSection", "name": "Cocktail"}
+    ]
+  },
+  "amenityFeature": [
+    {"@type": "LocationFeatureSpecification", "name": "Dehor esterno", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Pet-friendly", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Pasticceria artigianale", "value": true}
+  ],
+  "publicAccess": true,
+  "smokingAllowed": false,
+  "acceptsReservations": "True",
+  "paymentAccepted": "Cash, Credit Card"
+}
+</script>
+
+
+
 <style>
 :root {
     --paper: #efe6d1;
+    
+    /* Testo visibile solo ai motori di ricerca e agli screen reader, invisibile visivamente */
+    .visually-hidden {
+        position: absolute !important;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+    }
+    
     --paper-2: #e9dfc6;
     --paper-edge: #d8ca9e;
     --ink: #1b1410;
@@ -991,8 +1119,9 @@ body::after {
 
     <div class="hero-masthead">
         <div class="hero-kicker">Caffetteria · Pasticceria · Bistrot · Cocktail Bar</div>
-        <h1 class="hero-title-sign" aria-label="Bistrot &amp; Caffè Vintage">
-            <img src="images/titolo-insegna.webp" alt="Bistrot & Caffè Vintage">
+        <h1 class="hero-title-sign">
+            <span class="visually-hidden">Bistrot &amp; Caffè Vintage</span>
+            <img src="images/titolo-insegna.webp" alt="Bistrot & Caffè Vintage — insegna dorata del locale" role="presentation">
         </h1>
         <div class="hero-subtitle">un salotto d'altri tempi, a Milano</div>
     </div>
@@ -1040,7 +1169,7 @@ body::after {
         <div class="about-text">
             <p>Varcare la porta del Bistrot è un piccolo esercizio di nostalgia. Il legno intarsiato dei tavoli, lo scaffale metallico che divide la sala dalla vetrina, le poltroncine di velluto con gambe dorate, un lampadario di cristallo che illumina la giornata.</p>
             <p>Ma non è solo scenografia. Si viene qui per un cappuccino fatto a dovere e un cannolo al pistacchio appena farcito, per un pranzo leggero su ceramiche decorate, per un aperitivo lento con una carta cocktail che conta le sue trenta proposte. E, se fuori il tempo lo permette, per un caffè al dehor con il cane ai piedi.</p>
-            <p>Via delle Ande è un angolo tranquillo di Milano. Una volta dentro, però, potresti trovarti altrove: in una trattoria romana, in un bistrot di Parigi, nel retrobottega di un antiquario di provincia. Quel che conta è sentirsi a casa.</p>
+            <p>Via delle Ande è un angolo tranquillo di Milano, nel cuore del <strong>quartiere Gallaratese</strong> (Municipio 8), a due passi dal <strong>centro commerciale Bonola</strong> e dalla <strong>fermata metropolitana M1 Bonola</strong>. Una volta dentro, però, potresti trovarti altrove: in una trattoria romana, in un bistrot di Parigi, nel retrobottega di un antiquario di provincia. Quel che conta è sentirsi a casa.</p>
         </div>
         <figure class="about-image-wrap">
             <img src="images/sala-ampia.webp" alt="Interno del locale con tavoli e poltroncine velluto" class="vintage-photo">
@@ -1135,7 +1264,7 @@ body::after {
         <div class="section-head">
             <div class="section-number">Intermezzo</div>
             <div>
-                <h2 class="section-title"><em>Amar</em>cord.</h2>
+                <h2 class="section-title"><span aria-label="Amarcord"><em>Amar</em>cord</span>.</h2>
                 <div class="section-kicker">L'anima nostalgica italiana del locale</div>
             </div>
         </div>
@@ -1162,7 +1291,7 @@ body::after {
             <div class="section-head">
                 <div class="section-number">Capitolo III</div>
                 <div>
-                    <h2 class="section-title">Cock<em>tail</em>,<br>la carta.</h2>
+                    <h2 class="section-title"><span aria-label="Cocktail, la carta"><span>Cock</span><em>tail</em>,<br>la carta</span>.</h2>
                     <div class="section-kicker">Dall'aperitivo fino a tardi</div>
                 </div>
             </div>
